@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: "Microsoft JhengHei";
+  background: #f8f5f2;
+}
+
+/* 導覽列 */
+nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* 容器 */
+.container {
+  max-width: 900px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+/* About 卡片 */
+.about-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.profile {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.about-info {
+  text-align: left;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+}
+
+/* 技能區排版（兩排） */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* 單個技能 */
+.skill p {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+/* 進度條背景 */
+.bar {
+  background: #ddd;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* 技能條 */
+.level {
+  height: 10px;
+  background: #4a4e69;
+  border-radius: 5px;
+}
+
+/* 各技能程度（你可以自己調） */
+.html { width: 80%; }
+.css { width: 75%; }
+.java { width: 70%; }
+.python { width: 65%; }
+
+.level {
+  animation: grow 1.5s ease;
+}
+
+@keyframes grow {
+  from { width: 0; }
+}
+
+/* 經歷 */
+.tab-btn {
+  background: #4a4e69;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: #1a1c2c;
+}
+
+.category-content {
+  display: none;
+}
+.category-content.active {
+  display: block;
+}
+
+.exp-card {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+/* 證照 */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.awards-grid img:nth-child(1),
+.awards-grid img:nth-child(2),
+.awards-grid img:nth-child(3){
+  grid-column: span 2;
+}
+
+.awards-grid img:nth-child(4){
+  grid-column: 2 / 4;
+}
+
+.awards-grid img:nth-child(5){
+  grid-column: 4 / 6;
+}
+
+.award-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+  background: #1a1c2c;
+  color: #fff;
+  margin-top: 60px;
+  padding: 30px 0;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #cdb4ae;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
