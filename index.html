@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>個人履歷 - 胡程昕</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <a href="#about">關於我</a>
+  <a href="#skills">專業技能</a>
+  <a href="#experience">個人經歷</a>
+  <a href="#awards">證照</a>
+  <a href="#contact">聯絡我</a>
+</nav>
+
+<!-- About -->
+<section id="about" class="container">
+  <h2>關於我</h2>
+
+  <div class="about-card">
+    <img src="image/profile.jpg" class="profile">
+
+    <div class="about-info">
+      <h3>胡程昕</h3>
+      <p class="slogan">Fuck around and find out.</p>
+
+      <div class="info-grid">
+        <div>生日：2005 / 11 / 21</div>
+        <div>MBTI：INFP</div>
+        <div>學校：中原大學</div>
+        <div>科系：資訊管理</div>
+        <div>興趣：音樂、歷史</div>
+        <div>專長：分析社會與觀察世界</div>
+      </div>
+
+      <p>
+        我具備良好的邏輯思維與資訊整合能力，擅長觀察問題並提出解決方案，
+        能在不同環境中快速適應並穩定完成任務。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="container">
+  <h2>專業技能</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill">
+      <p>HTML</p>
+      <div class="bar"><div class="level html"></div></div>
+    </div>
+
+    <div class="skill">
+      <p>CSS</p>
+      <div class="bar"><div class="level css"></div></div>
+    </div>
+
+    <div class="skill">
+      <p>Java</p>
+      <div class="bar"><div class="level java"></div></div>
+    </div>
+
+    <div class="skill">
+      <p>Python</p>
+      <div class="bar"><div class="level python"></div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="container">
+  <h2>個人經歷</h2>
+
+  <div class="tab-buttons">
+    <button class="tab-btn active" onclick="showCategory(event,'club')">社團經歷</button>
+    <button class="tab-btn" onclick="showCategory(event,'work')">工作經歷</button>
+  </div>
+
+  <!-- 社團 -->
+  <div id="club-content" class="category-content active">
+    <div class="exp-card">
+      <h3>熱音社</h3>
+      <p>在熱音社擔任一般社員期間，我參與多次社團練習與活動，透過與不同成員的合作，逐漸培養出基本的團隊默契與配合能力。雖然並非核心幹部，但在參與過程中學會如何在團體中找到自己的定位，並理解整體表演需要每個角色的配合才能完成。此外，在練習與活動籌備的過程中，也體會到持續練習與自我要求的重要性，並培養出對細節的敏感度與責任感。</p>
+    </div>
+
+    <div class="exp-card">
+      <h3>系學會</h3>
+      <p>在系學會擔任執行秘書期間，主要負責會議紀錄與資料整理，確保每次會議內容能夠被完整記錄並有效傳達給相關人員。這段經驗讓我培養出良好的組織能力與資訊整理能力，能在會議進行中快速抓住重點並轉化為清晰的紀錄。同時，也透過與幹部之間的協作，了解活動籌辦的整體流程與分工方式，進一步提升溝通效率與團隊合作能力。在多次會議與活動準備中，我逐漸建立起對細節的掌握度與對工作的責任感。</p>
+    </div>
+  </div>
+
+  <!-- 工作 -->
+  <div id="work-content" class="category-content">
+    <div class="exp-card">
+      <h3>酒吧工作</h3>
+      <p>在酒吧工作期間，我長時間處於高壓且快速變動的環境中，需要同時處理點單、出餐、顧客服務與突發狀況。這段經驗讓我培養出良好的臨場反應能力，能在混亂中快速判斷優先順序並做出決策。此外，我也學會如何觀察顧客情緒與需求，適時調整溝通方式，以提升整體服務品質。面對各式各樣的客人與情境，我逐漸建立起穩定的情緒管理能力與抗壓性，並在團隊合作中維持流暢的運作效率。。</p>
+    </div>
+
+    <div class="exp-card">
+      <h3>補習班助教</h3>
+      <p>在補習班擔任助教期間，我負責協助學生課業學習與日常管理，包含解答問題、維持課堂秩序及協助教師進行教學流程。這段經驗讓我學會將複雜的知識轉化為簡單易懂的內容，提升表達與溝通能力。同時，我也培養出耐心與細心，能夠根據不同學生的學習狀況調整輔導方式。此外，在面對學生情緒或學習瓶頸時，我能以較成熟的態度進行引導與支持，協助他們建立信心並持續進步。</p>
+    </div>
+  </div>
+</section>
+
+<!-- Awards -->
+<section id="awards" class="container">
+  <h2>證照</h2>
+
+  <div class="awards-grid">
+    <img src="image/onlineshop.jpg" class="award-img">
+    <img src="image/data.jpg" class="award-img">
+    <img src="image/Excel2016.jpg" class="award-img">
+    <img src="image/PPT2016.jpg" class="award-img">
+    <img src="image/Word2016.jpg" class="award-img">
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container">
+  <h2>聯絡我</h2>
+  <p>Email: hwusam0@gmail.com</p>
+  <a href="https://www.instagram.com/chengxin._.1121/">Instagram: chengxin._.1121</a><br>
+  <a href="https://www.facebook.com/profile.php?id=100012387006089&locale=zh_TW">Facebook: Chen-Xin Hu</a>
+</section>
+
+<footer class="footer"></footer>
+  <div class="footer-content">
+    <p>© 2026 胡程昕 | All Rights Reserved</p>
+
+    <div class="footer-links">
+      <a href="mailto:hwusam0@gmail.com">Email</a>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function showCategory(e, category) {
+  document.querySelectorAll('.category-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+
+  document.getElementById(category + '-content').classList.add('active');
+  e.currentTarget.classList.add('active');
+}
+</script>
+
+</body>
+</html>
